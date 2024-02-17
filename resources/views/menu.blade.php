@@ -28,5 +28,4 @@
         @endforeach
 
     </section>
-
 @endsection

@@ -1,0 +1,109 @@
+.logo{
+    width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto; /* Pour maintenir les proportions de l'image */
+    margin-right: 10px; /* Ajoutez une marge à droite de l'image */
+}
+
+body {
+    background-color: bisque;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.navbar {
+    text-align: center;
+    background-color: #c98b54;
+  }
+ 
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #000000;
+    padding: 10px 15px;
+    display: inline-block;
+    border: 1px solid #dea254;
+    border-radius: 5px;
+  }
+  
+  a:hover {
+    background-color: #dea200;
+  }
+
+
+img {
+    width: 50%; /* Ajustez la largeur de l'image selon vos besoins */
+    height: auto; /* Pour maintenir les proportions de l'image */
+    margin-right: 10px; /* Ajoutez une marge à droite de l'image */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.cours {
+  width: 30%; /* Ajustez la largeur de l'image selon vos besoins */
+  height: auto; /* Pour maintenir les proportions de l'image */
+  margin-right: 10px; /* Ajoutez une marge à droite de l'image */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }
+
+/*Ce que j'ai r'ajouté*/
+#menu {
+  width: 70%;
+  padding: 20px;
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
+.item {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+#cart {
+  width: 10%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background-color: #c98b54;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+}
+
+#cart-items li {
+  margin-bottom: 10px;
+}
+
+#total {
+  font-weight: bold;
+}

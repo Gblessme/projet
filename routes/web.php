@@ -22,6 +22,8 @@ Route::get('/', [MainController::class, 'home'])->name('main.home');
 
 Route::get('/menu', [MainController::class, 'menu'])->name('main.menu');
 
+Route::get('/cours', [MainController::class, 'cours'])->name('main.cours');
+
 Route::get('/plat/{id}', [MainController::class, 'plat'])->name('main.plat');
 
 Route::get('/reservation', [MainController::class, 'reservation'])->name('main.reservation');

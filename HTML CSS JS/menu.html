@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cours de cuisine</title>
+
+</head>
+<body>
+    <div class="logo">
+        <img src="/projet-Ocnamo/image/logo.png" alt="image">
+        
+    </div>
+        <h1>OCNAMO</h1>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Cours de cuisine</a></li>
+        </ul>
+    </nav>
+    <div class="cours">
+    <img src="/projet-Ocnamo/image/cours.jpg" alt="image">
+    </div>
+
+    <div id="menu">
+        <!-- Catégorie Entrée -->
+        <div class="category">
+            <h2>Entrée</h2>
+            <div class="item" data-name="Salade" data-price="5.99">
+                <img src="salade.jpg" alt="Salade">
+                <p>Salade</p>
+                <p class="price">5.99 €</p>
+                <button onclick="addToCart(this)">Ajouter au panier</button>
+            </div>
+            <!-- Ajoutez d'autres plats ici -->
+        </div>
+
+        <!-- Autres catégories ici -->
+
+    </div>
+
+    <div id="cart">
+        <h2>Panier</h2>
+        <ul id="cart-items">
+            <!-- Les éléments du panier seront ajoutés ici dynamiquement -->
+        </ul>
+        <p id="total">Total : 0.00 €</p>
+        <button onclick="placeOrder()">Je commande</button>
+    </div>
+    <script src="menu.js"></script>
+</body>
+</html>

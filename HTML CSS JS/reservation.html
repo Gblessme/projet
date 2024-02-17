@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+    <link rel="stylesheet" href="reservation.css">
+</head>
+<body>
+    <div class="container">
+        <button aria-label="Sélectionner la langue" onclick="toggleLanguages()">Langue</button>
+        <div id="languageBtn" style="display: none;">
+            <button aria-label="Français" onclick="selectLanguage('fr')">Français</button>
+            <button aria-label="Anglais" onclick="selectLanguage('en')">Anglais</button>
+            <button aria-label="Espagnol" onclick="selectLanguage('es')">Espagnol</button>
+            <button aria-label="Italien" onclick="selectLanguage('it')">Italien</button>
+        </div>
+        <h2>Réservation O'Cnamo</h2>
+        <p class="mes">Nos réservations s'effectuent uniquement en ligne ! Pour le week-end : vous allez recevoir 
+            un sms pour re-confirmer votre venue, merci d'y répondre. Sans nouvelle de votre part, 
+            la réservation sera automatiquement annulée, nous avons beaucoup trop de réservations 
+            non honorées ! Merci de votre compréhension et à très vite :)</p>
+        <form action="#" method="post">
+        
+            <label for="covers">Nombre de couverts:</label>
+            <select id="covers" name="covers" required>
+                <option value=""></option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select>
+        
+            <label for="date">Date de réservation:</label>
+            <input type="date" id="date" name="date" min="2024-01-25" required>
+        
+            <label for="location">Emplacement:</label>
+            <select id="location" name="location" required>
+                <option value=""></option>
+                <option value="interior">Salle Intérieur</option>
+                <option value="exterior">Terrasse</option>
+            </select>
+        
+            <label for="time">Horaire:</label>
+            <select id="time" name="time" required>
+                    <!-- DEJEUNER SEMAINE -->
+                <Option value=""></Option>
+                <option value="12:45:00">12:45</option>
+                <option value="13:00:00">13:00</option>
+                <option value="13:15:00">13:15</option>
+                <option value="13:30:00">13:30</option>
+                <option value="13:45:00">13:45</option>
+                <option value="14:00:00">14:00</option>
+                    <!-- SOIR -->
+                <option value="18:00:00">18:00</option>
+                <option value="18:15:00">18:15</option>
+                <option value="18:30:00">18:30</option>
+                <option value="18:45:00">18:45</option>
+                <option value="19:00:00">19:00</option>
+                <option value="19:15:00">19:15</option>
+                <option value="19:30:00">19:30</option>
+                <option value="19:45:00">19:45</option>
+                <option value="20:00:00">20:00</option>
+                <option value="20:15:00">20:15</option>
+                <option value="20:30:00">20:30</option>
+            </select>
+
+            <button type="submit" id="search">Rechercher</button>
+        </form>
+    </div>     
+    <script src="reservation.js"></script>
+      
+</body>
+</html>

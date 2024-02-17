@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cours de cuisine</title>
+
+</head>
+<body>
+    <div class="logo">
+        <img src="/projet-Ocnamo/image/logo.png" alt="image">
+        
+    </div>
+        <h1>OCNAMO</h1>
+
+    <nav class="navbar">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Reservation</a></li>
+          <li><a href="#">Cours de cuisine</a></li>
+        </ul>
+    </nav>
+    <div class="cours">
+    <img src="/projet-Ocnamo/image/cours.jpg" alt="image">
+    </div>
+</body>
+    <h2>Inscrivez-vous dés mainteant à nos cours de cuisine !</h2>
+
+    <p>Y vous accueillera les mercredi et dimanche après-midi pour ses cours de cuisine. Le mercredi vous apprendrez à faire toute sortes de plats et le dimanche vous pourrez cuisiner de délicieux desserts afin de terminer la semaine en douceur.
+Le matériel de cuisine et les ingrédients sont fournis, il vous suffira juste de payer la participation.
+Les places sont limitées alors si un créneau vous plaît, n’hésitez-pas à le prendre !
+
+Mercredi: 14h30-17h30
+Dimanche: 13h30-16h30
+Tarif: 30€ la leçon 
+pack mensuel: 200€
+
+Inscrivez-vous dès maintenant en complétant ce formulaire: </p>
+<fieldset>
+
+    <form action="" method="POST">
+        <div>
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" min="3" max="50" required>
+        </div>
+        <div>
+    <label for="inscription">Inscription pour le prochain</label>
+    <select name="inscription" id="inscription">
+        <option value=""></option>
+        <option value="Mercredi">Mercredi</option>
+        <option value="Dimanche">Dimanche</option>
+    </div>
+</select>
+
+<form>
+    <p>Veuillez choisir votre mode de paiement :</p>
+    <div>
+      <input type="radio" id="CB" name="paiement" />
+      <label for="paymentChoice1">Carte bleue</label>
+  
+      <input type="radio" id="Sur place" name="paiement"  />
+      <label for="paymentChoice2">Sur place</label>
+  
+    </div>
+    <div>
+      <button type="submit">Envoyer</button>
+    </div>
+  </form>
+  <pre id="log"></pre>
+  
+</fieldset>
+
+</body>
+</html>

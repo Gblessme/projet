@@ -11,27 +11,34 @@ class Maincontroller extends Controller
 {
     private $heures = [
         // crénaux du midi
-        '12:00:00' =>'12:00',
-        '12:30:00' =>'12:30',
-        '13:00:00' =>'13:00',
-        '13:30:00' =>'13:30',
-        
-        // crénaux du soir
-        '20:00:00' =>'20:00',
-        '20:30:00' =>'20:30',
-        '21:00:00' =>'21:00',
-        '21:30:00' =>'21:30',
-    ];   
+        '12:45:00'=>'12:45',
+        '13:00:00'=>'13:00',
+        '13:15:00'=>'13:15',
+        '13:30:00'=>'13:30',
+        '13:45:00'=>'13:45',
+        '14:00:00'=>'14:00',
 
+
+        // crénaux du soir
+        '18:00:00'=>'18:00',
+        '18:15:00'=>'18:15',
+        '18:30:00'=>'18:30',
+        '18:45:00'=>'18:45',
+        '19:00:00'=>'19:00',
+        '19:15:00'=>'19:15',
+        '19:30:00'=>'19:30',
+        '19:45:00'=>'19:45',
+        '20:00:00'=>'20:00',
+        '20:15:00'=>'20:15',
+        '20:30:00'=>'20:30',
+];
     public function home()
     {
         $actus = Actu::all();
         return view('home', [
             'actus' => $actus,
-
         ]);
     }
-
     public function menu()
     {
         $categories =  Categorie::all();
@@ -39,7 +46,6 @@ class Maincontroller extends Controller
             'categories' => $categories,
         ]);
     }
-
     public function plat(int $id)
     {
         $plat =  Plat::find($id);   //genere une requete sql qui permet de recuperer un plat par son id
@@ -53,11 +59,10 @@ class Maincontroller extends Controller
         'heures' => $this->heures,
     ]);
     }
-    
+
     public function reservationStore(Request $request)
     {
         $heures = implode(',', $this->heures);
-
         $validated = $request->validate([
             'nom' => 'required|min:3|max:50',
             'couverts' => 'required|numeric|gte:1|lte:16',
@@ -68,8 +73,8 @@ class Maincontroller extends Controller
         ]);
         dd($validated);
     }
+    public function cours()
+        {
+            return view ('cours');
+        }
 }
-
-//model:outil de communication entre le controller et la bdd.
-//le controller demande au model des données afin de les distribuer aux views
-// dd, dump and die. envoie les données et s'arrête
