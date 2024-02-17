@@ -11,14 +11,16 @@
                 <ul class="plats">
                     @foreach ($categorie->plats() as $plat)
                     <li>
-                        <a href="{{route('main.plat', ['id'=> $plat->id])}}">
-                            <img src="{{ asset('Image/' . $plat->fichier) }}" alt="{{ $plat->nom }}" /></a>
-                            <a href="{{route('main.plat', ['id'=> $plat->id])}}">
-                            <h4>{{ $plat->nom }}</h4></a>
-                            <span class="prix">{{ $plat->prix }}€</span> 
+                        <div class="plat-nom">
+                            <a href="{{route('main.plat', ['id'=> $plat->id])}}" class="image-plat">
+                                <img src="{{ asset('Image/' . $plat->fichier) }}" alt="{{ $plat->nom }}" /></a>
+                                <a href="{{route('main.plat', ['id'=> $plat->id])}}" class="image-plat">
+                                    <h4>{{ $plat->nom }}</h4></a>
+                                    <span class="prix">{{ $plat->prix }}€</span> 
+                                </div>
                             <ul>
                             @foreach ($plat->etiquettes() as $etiquette)
-                        <li>{{$etiquette->nom}}</li>
+                        <li class="etiquette">{{$etiquette->nom}}</li>
                         @endforeach
                     </ul>
                     </li>
@@ -28,5 +30,4 @@
         @endforeach
 
     </section>
-
 @endsection
