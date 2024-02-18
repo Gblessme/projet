@@ -77,4 +77,8 @@ class Maincontroller extends Controller
         {
             return view ('cours');
         }
+        public function contact()
+        {
+            return view('contact');
+        }
 }

@@ -6,25 +6,32 @@
 
         <h1>
             <a href="Accueil.html">O Cnamo</a></h1>
-    </center>
 
   </header>
 
     <h2>INFOS PRATIQUES</h2>
-    <ol>
-      <li>5 Bd Louis XIV, 59800 Lille</li>
-      <li>03.11.11.11.11 / 03.12.12.12.12</li>
-      <li>Lundi au Dimanche 11h30-15h00 et 19h00-22h30</li>
-    </ol>
-         </article>
-  <form>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.9079189349777!2d3.0695748269722385!3d50.62882736245515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d59118928ab7%3A0xd0f3b05faaf1c4c!2sLe%20Cnam!5e0!3m2!1sfr!2sfr!4v1708276647666!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <div>
-        <button>Reservation</button>
-    </div>
-  </form> 
-  <div>
+      <h1>Mentions légales</h1>
+      
+      <p>O'cnamo</p>
+      <p>5 Bd Louis XIV</p>
+      <p>59800 Lille</p>
+      <p>*Appels du lundi au dimanche entre 12h et 19h (avant et après nous sommes fermés)</p>
+      <p>Mail :<a href="mailto:contact@ocnamo.com"> contact@ocnamo.com</a></p>
+      <p>Déjeuner et Dîner !</p>
+      <p>Ouvert du lundi au dimanche 12h45 à 20h</p>
+      <p>Dernière arrivée à 19h30</p>
+      <p><a href="{{ route ('main.reservation') }}">Réservation une table</a></p>
+      <p>O'cnamo, vous découvrirez
+           le premier endroit à Lille où certaines recettes ont
+            été créés en 2024 et vous pourrez assister à la
+             fabrication tout en dégustant un déjeuner ou un dîner
+              original de votre composition !</p>
+      
+  </div>
     <footer>
-      <p>PARLEZ DE NOUS!</p>
+
     </footer>
   </div>
   @endsection

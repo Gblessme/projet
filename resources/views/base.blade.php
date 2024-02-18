@@ -32,6 +32,9 @@
                 <li>
                     <a href="{{ route ('main.reservation') }}">Réservation</a>
                 </li>
+                <li>
+                    <a href="{{ route ('main.contact') }}">Contact</a>
+                </li>
             </ul>
         </nav>
 
@@ -40,7 +43,26 @@
 @yield('content')
 <footer>
     <footer class="footer">
-        <p>&copy; Mention Légales</p>      <p> OCnamo</p>
+        <p>&copy; OCnamo</p>   <p>PARLEZ DE NOUS!</p>
+        <div class="RS">
+            <img src="Image/logofb.png" alt=""><img src="Image/logoinsta.png" alt="">
+        </div>
+        <div class="footcontain">
+            <div>
+                <p><a href="mailto:ocamo@notre-restaurant.com">ocamo@notre-restaurant.com</a></p>
+                <br>
+                <p><a href="https://maps.app.goo.gl/Dbrn5azEyVHb2d457">5 Bd Louis XIV</a></p>
+                <p><a href="https://maps.app.goo.gl/Dbrn5azEyVHb2d457">59800 Lille</a></p>
+            </div>
+            <div>
+                <button><a href="{{ route ('main.reservation') }}">Réservation une table</a></button>
+                <button><a href="{{ route ('main.cours') }}">Cours</a></button>
+            </div>
+            <div>
+                <p><a href="http://">Protection de données</a></p>
+
+            </div>
+        </div>
 </footer>
 
 </body>

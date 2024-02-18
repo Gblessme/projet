@@ -260,6 +260,7 @@ h2 {
   text-align: center;
   padding: 10px;
   margin: -10px;
+  display: flex;
 }
 
 .coursbox {
@@ -269,4 +270,20 @@ h2 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   margin-bottom: 15px;
   margin-top: 15px;
+}
+
+.RS {
+  height: 100px;
+  width: 100px;
+display: flex;
+}
+
+.footer p {
+  padding-left: 150px;
+}
+
+.footcontain {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
 }

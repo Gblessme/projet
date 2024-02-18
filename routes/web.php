@@ -24,6 +24,8 @@ Route::get('/menu', [MainController::class, 'menu'])->name('main.menu');
 
 Route::get('/cours', [MainController::class, 'cours'])->name('main.cours');
 
+Route::get('/contact', [MainController::class, 'contact'])->name('main.contact');
+
 Route::get('/plat/{id}', [MainController::class, 'plat'])->name('main.plat');
 
 Route::get('/reservation', [MainController::class, 'reservation'])->name('main.reservation');
