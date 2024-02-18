@@ -38,15 +38,22 @@ body {
     max-width: 100%;
 }
 
+header {
+  top: 0;
+  background-color: #c98b54;
+
+}
+
 h1 {
     text-align: center;
     font-family: 'Arial', sans-serif;
+  
 }
 
 
 .navbar {
     text-align: center;
-    background-color: #c98b54;
+    background-color: #c98b54;  
   }
  
   
@@ -253,6 +260,20 @@ h2 {
 
  footer {
   background-color: #c98b54;
-  padding: 17px 48px;
-  margin: 638 * 297.042;
+  padding: 50px;
+  bottom: 0;
+  width: 100%;
  }
+ .footcontain {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+/* GOOGLE */
+#google_translate_element {
+  position: fixed;
+  bottom: 10px; 
+  right: 10px; 
+  z-index: 1000; 
+}

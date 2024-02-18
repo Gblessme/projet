@@ -132,4 +132,5 @@ document.querySelector('.placeOrderBtn').addEventListener('click', function() {
     placeOrder();
 });
 
+// GOOGLE
 

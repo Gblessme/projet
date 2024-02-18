@@ -6,6 +6,12 @@
     <title>{{ config('app.name') }} - @yield('title')</title>
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+        }
+    </script>
+    <script  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
 <body>
     <header>
@@ -34,6 +40,7 @@
         </nav>
 </header>
 @yield('content')
+<div id="google_translate_element"></div>
 <footer>
     <div class="footcontain">
         <div>
@@ -47,7 +54,8 @@
             <button><a href="{{ route ('main.cours') }}">Cours</a></button>
         </div>
         <div>
-            
+            <p><a href="http://">Protection de données</a></p>
+            <p><a href="{{ route ('main.mention') }}">Mentions légales</a></p>
         </div>
     </div>
 
