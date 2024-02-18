@@ -153,7 +153,7 @@ label {
   margin-bottom: 8px;
 }
 
-input, select {
+/* input, select {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -161,9 +161,9 @@ input, select {
   border-radius: 4px;
   box-sizing: border-box;
   position: initial;
-  margin-bottom: 50px; /* Pour donner de l'espace au texte en dessous */
+  margin-bottom: 50px; Pour donner de l'espace au texte en dessous
 
-}
+} */
 
 button {
   background-color: bisque;
@@ -242,3 +242,6 @@ h2 {
       transform: translate(-70%); /* Fin de la rotation, revient à 0deg */
   }
 }
+ input, select {
+  width: 150px;
+ }

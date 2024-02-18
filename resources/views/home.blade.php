@@ -5,14 +5,14 @@
 @section('content')
     <h1>Bienvenue dans votre nouveau Restau<h1>
         <div class="carousel">
-            <div class="carousel_items">
+            {{-- <div class="carousel_items">
               <img src="Image/logo.jpg" alt="" class="carousel_img">
               <img src="Image/logo.jpg" alt="" class="carousel_img">
               <img src="Image/logo.jpg" alt="" class="carousel_img">
               <img src="Image/logo.jpg" alt="" class="carousel_img">
               <img src="Image/cours.jpg" alt="" class="carousel_img">
 
-            </div>
+            </div> --}}
           </div>
     <div>
         <img src="{{ url('/Image/accueil.jpg') }}" alt="Image 1">
