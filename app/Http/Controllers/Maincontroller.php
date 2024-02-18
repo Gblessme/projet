@@ -82,7 +82,13 @@ class Maincontroller extends Controller
         {
             return view ('cours');
         }
+        public function mention()
+        {
+            return view ('mention');
+        }
+
 }
+
 
 //model:outil de communication entre le controller et la bdd.
 //le controller demande au model des données afin de les distribuer aux views
