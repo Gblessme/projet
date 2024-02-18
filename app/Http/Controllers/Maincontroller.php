@@ -81,4 +81,15 @@ class Maincontroller extends Controller
         {
             return view('contact');
         }
+        public function coursStore(Request $request)
+        {
+            $heures = implode(',', $this->heures);
+            $validated = $request->validate([
+                'nom' => 'required|min:3|max:50',
+                'jour' => 'required|date|date_format:Y-m-d|after_or_equal:today',
+                'telephone' => 'required',
+                'paiement' => 'required',
+            ]);
+            dd($validated);
+        }
 }

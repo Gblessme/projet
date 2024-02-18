@@ -32,12 +32,19 @@ Inscrivez-vous dès maintenant en complétant ce formulaire: </p>
             <label for="nom">Nom</label>
             <input type="text" name="nom" id="nom" min="3" max="50" required>
         </div>
-        <div class="formulaire">
-    <label for="inscription">Inscription pour le prochain</label>
-<select name="inscription" id="inscription">
-        <option value=""></option>
-        <option value="Mercredi">Mercredi</option>
-        <option value="Dimanche">Dimanche</option>
+        <div>
+            <label for="jour">Jour</label>
+            <input type="date" name="jour" id="jour" min="{{ date ('Y-m-d') }}" value="{{ old('jour') }}" required>
+            @error('jour')
+                <div class="invalid-feedback">{{ $message }}</div>
+            @enderror
+        </div>
+    <div>
+        <label for="telephone">Numéro de téléphone</label>
+        <input type="phone" name="telephone" id="telephone" value="{{ old('telephone') }}" placeholder="exemple : 0612345678" required>
+        @error('telephone')
+            <div class="invalid-feedback">{{ $message }}</div>
+        @enderror
     </div>
 </select>
 
