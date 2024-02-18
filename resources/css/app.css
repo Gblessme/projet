@@ -206,6 +206,9 @@ h2 {
 .etiquette {
   display: list-item;
 }
+.etiquette::marker {
+  margin-left: 15px;
+}
 /* ........................... */
 
 *{
@@ -244,4 +247,12 @@ h2 {
 }
  input, select {
   width: 150px;
+ }
+
+ /* FOOTER */
+
+ footer {
+  background-color: #c98b54;
+  padding: 17px 48px;
+  margin: 638 * 297.042;
  }

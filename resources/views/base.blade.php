@@ -35,8 +35,22 @@
 </header>
 @yield('content')
 <footer>
-<!--todo-->
+    <div class="footcontain">
+        <div>
+            <p><a href="mailto:ocamo@notre-restaurant.com">ocamo@notre-restaurant.com</a></p>
+            <br>
+            <p><a href="https://maps.app.goo.gl/Dbrn5azEyVHb2d457">5 Bd Louis XIV</a></p>
+            <p><a href="https://maps.app.goo.gl/Dbrn5azEyVHb2d457">59800 Lille</a></p>
+        </div>
+        <div>
+            <button><a href="{{ route ('main.reservation') }}">Réservation une table</a></button>
+            <button><a href="{{ route ('main.cours') }}">Cours</a></button>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+
 </footer>
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 </html>
