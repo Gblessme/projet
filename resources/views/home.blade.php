@@ -28,13 +28,14 @@
         
         À bientôt !</p> <br>
 
-    <h2> Cours de cuisine</h2>
+    <h2> Cours de cuisine</h2> <br>
     <p>Vous étiez nombreux à l’avoir demandé et elle rêvait de donner vie à cette activité, Nous vous annonçons avec joie le début des cours de cuisine ! <br>
-        Y elle même vous accueillera dans notre restaurant afin de vous proposer des cours en petit commités afin d’être entièrement disponible pour vous ! <br>
+        Mahoro elle même vous accueillera dans notre restaurant afin de vous proposer des cours en petit commités afin d’être entièrement disponible pour vous ! <br>
         D’ailleurs, du 20/04/2023 au 20/05/2023, vous pouvez participer à une tombola afin de gagner un cours gratuit !
-         Inscrivez-vous dès maintenant sur en suivant ce lien ! {{--insérer redirection  --}}
-        </p> <br>
-
+        
+      </p> <br>
+      <a href="{{ route ('main.cours') }}">Inscrivez-vous dès maintenant sur en suivant ce lien ! </a> <br>
+<br>
         <h2>1 mois déjà</h2> <br>
         <p>Cela fait déjà 1 mois que nous avons ouvert nos portes et que vous nous avez submergé ! Nous sommes ravis de voir que notre cuisine vous plaît et on espère vous revoir bientôt !
         Restez à l’écoute car nous aurons bientôt une annonce à vous faire !</p>

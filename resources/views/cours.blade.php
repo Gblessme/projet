@@ -4,36 +4,61 @@
 
 @section('content')
 
-    <div class="cours">
-    <img src="/public/Image/cours.jpg" alt="">
+    <div class="photocours">
+    <img src="Image/cours.jpeg" alt="">
     </div>
 
-    <div id="menu">
-        <!-- Catégorie Entrée -->
-        <div class="category">
-            <h2>Entrée</h2>
-            <div class="item" data-name="Salade" data-price="5.99">
-                <img src="/public/image/accueil.jpeg" alt="Salade">
-                <p>Salade</p>
-                <p class="price">5.99 €</p>
-                <button onclick="addToCart(this)">Ajouter au panier</button>
-            </div>
-            <!-- Ajoutez d'autres plats ici -->
+    <div class="coursbox">
+        <h2>Inscrivez-vous dés mainteant à nos cours de cuisine !</h2>
+        
+        <p>Mahoro vous accueillera les mercredi et dimanche après-midi pour ses cours de cuisine. <br>
+            Le mercredi vous apprendrez à faire toute sortes de plats et le dimanche vous pourrez cuisiner de délicieux desserts afin de terminer la semaine en douceur. <br>
+            Le matériel de cuisine et les ingrédients sont fournis, il vous suffira juste de payer la participation. <br>
+            Les places sont limitées alors si un créneau vous plaît, n’hésitez-pas à le prendre ! <br>
+            <br>
+            Mercredi: 14h30-17h30 <br>
+            Dimanche: 13h30-16h30 <br>
+            Tarif: 30€ la leçon <br>
+            pack mensuel: 200€ <br>
+            <br>
         </div>
 
-        <!-- Autres catégories ici -->
+        <div class="cours"></div>
+Inscrivez-vous dès maintenant en complétant ce formulaire: </p>
+<fieldset>
 
+    <div class="formulaire">
+    <form action="" method="POST">
+            <label for="nom">Nom</label>
+            <input type="text" name="nom" id="nom" min="3" max="50" required>
+        </div>
+        <div class="formulaire">
+    <label for="inscription">Inscription pour le prochain</label>
+<select name="inscription" id="inscription">
+        <option value=""></option>
+        <option value="Mercredi">Mercredi</option>
+        <option value="Dimanche">Dimanche</option>
     </div>
+</select>
 
-    <div id="cart">
-        <h2>Panier</h2>
-        <ul id="cart-items">
-            <!-- Les éléments du panier seront ajoutés ici dynamiquement -->
-        </ul>
-        <p id="total">Total : 0.00 €</p>
-        <button onclick="placeOrder()">Je commande</button>
+<form>
+    <p>Veuillez choisir votre mode de paiement :</p>
+    <div class="formulaire">
+        <p>Carte bleue:</p>
+      <input type="radio" id="CB" name="paiement" />
+      <label for="paymentChoice1"></label>
+  
+      <p>Sur place</p>
+      <input type="radio" id="Sur place" name="paiement"  />
+      <label for="paymentChoice2"></label>
+  
     </div>
-
-<ul>
+    <div class="formulaire">
+      <button type="submit">Envoyer</button>
+    </div>
+  </form>
+  <pre id="log"></pre>
+  
+</fieldset>
 
 @endsection
