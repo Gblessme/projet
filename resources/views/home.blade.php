@@ -15,7 +15,12 @@
 </div>
 
 
-    <div class="actu">
+@foreach ($actus as $actu)
+<li> {{$actu->contenu}} ({{$actu->date_publication}}) </li>
+
+@endforeach
+
+    {{-- <div class="actu">
 
         <h2> Un an déjà!</h2> <br>
         <p>Ocnamo a un an déjà ! Nous avons vraiment pas vu le temps filer, et vous ? <br>
@@ -43,7 +48,7 @@
         <h2>On l’a fait! Notre projet de restaurant démarre !</h2> <br>
         <p> Ce jour est à marquer d’une pierre blanche pour nous, cette idée de restaurant qui nous tenait tant à cœur est enfin venu au monde ! <br>
             Nous avons hâte de vous recevoir et n’hésitez-pas à consulter nos réseaux sociaux afin d’être à l’affût de nos dernières créations !</p>
-        </div>
+        </div> --}}
             
             
             {{-- <ul>

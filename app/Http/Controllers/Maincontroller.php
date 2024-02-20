@@ -88,7 +88,7 @@ class Maincontroller extends Controller
                 'nom' => 'required|min:3|max:50',
                 'jour' => 'required|date|date_format:Y-m-d|after_or_equal:today',
                 'telephone' => 'required',
-                'paiement' => 'required',
+                'paiement' => 'true','required',
             ]);
             dd($validated);
         }

@@ -51,14 +51,17 @@ Inscrivez-vous dès maintenant en complétant ce formulaire: </p>
 <form>
     <p>Veuillez choisir votre mode de paiement :</p>
     <div class="formulaire">
+        <div class="paiement">
         <p>Carte bleue:</p>
-      <input type="radio" id="CB" name="paiement" />
+      <input type="radio" id="CB" name="paiement" value="0 />
       <label for="paymentChoice1"></label>
   
-      <p>Sur place</p>
-      <input type="radio" id="Sur place" name="paiement"  />
-      <label for="paymentChoice2"></label>
-  
+
+          <p>Sur place</p>
+          <input type="radio" id="Sur place" name="paiement" value="1"  />
+          <label for="paymentChoice2"></label>
+          
+        </div>
     </div>
     <div class="formulaire">
       <button type="submit">Envoyer</button>

@@ -287,3 +287,7 @@ display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
+
+.paiement {
+  display: flex;
+}
