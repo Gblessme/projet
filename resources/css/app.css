@@ -1,6 +1,68 @@
-/* .contenu {
-  max-width: 100%;
-} */
+a {
+  text-decoration: none;
+  color: #fff;
+}
+ul{
+  list-style-type: none;
+}
+
+.body_menu {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.cat {
+  margin-bottom: 30px;
+}
+
+.cat h3 {
+  font-size: 24px;
+  color: #ff6600;
+  margin-bottom: 10px;
+}
+
+.plat-nom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+
+.image-plat img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.image-plat h4 {
+  font-size: 18px;
+  color: #333; 
+  margin-bottom: 5px;
+}
+
+.prix {
+  font-size: 16px;
+  color: #45220c; 
+}
+
+
+.etiquette {
+  display: inline;
+  background-color: #c98b54; 
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+
+.cat{
+  padding-bottom: 80px;
+}
 .plats {
     display: flex;
     flex-wrap: wrap;
@@ -20,81 +82,89 @@
 .plats h4 {
     display: inline;
 }
-/* body {
-    background: linear-gradient(to bottom right, rgb(243, 243, 243), rgb(255, 200, 50), rgb(198, 50, 50));
- } */
+
  .invalid-feedback {
     color: red;
  }
 
- .logo{
-    width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
-    height: auto; /* Pour maintenir les proportions de l'image */
-    margin-right: 10px; /* Ajoutez une marge à droite de l'image */
-}
+ body {
+   background-color: bisque;
+  }
 
-body {
-    background-color: bisque;
-    max-width: 100%;
-}
+  .body_menu {
+    margin: 20px;
+  }
 
 header {
-  top: 0;
-  background-color: #c98b54;
-
+  background-color: #fff; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-    text-align: center;
-    font-family: 'Arial', sans-serif;
-  
+.logo img {
+  width: 100px; 
+  height: auto;
 }
-
 
 .navbar {
+  display: flex;
+  align-items: center;
+}
+
+.ul_navbar {
+  list-style: none;
+  display: flex;
+}
+
+
+.li_navbar {
+  margin-right: 20px; 
+  font-family: Arial,Helvetica,sans-serif;
+}
+.a_navbar:hover {
+  color: #c98b54; 
+}
+.home_title {
     text-align: center;
-    background-color: #c98b54;  
-  }
- 
-  
-  .ul_navbar {
-    list-style: none;
-    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; 
+    font-family: raleway, sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
     margin: 0;
-  }
+    padding: 10px;
   
-  li {
-    display: inline-block;
-    margin: 0 10px;
-  }
-  
-  a {
+}
+
+  .navbar a {
     text-decoration: none;
     color: #000000;
-    padding: 10px 15px;
-    display: inline-block;
-    border: 1px solid #dea254;
     border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+  
   }
   
-  a:hover {
-    background-color: #dea200;
-  }
-
-
 img {
-    width: 50%; /* Ajustez la largeur de l'image selon vos besoins */
-    height: auto; /* Pour maintenir les proportions de l'image */
-    margin-right: 10px; /* Ajoutez une marge à droite de l'image */
+    width: 50%;
+    height: auto;
+    margin-right: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
 .cours {
-  width: 30%; /* Ajustez la largeur de l'image selon vos besoins */
-  height: auto; /* Pour maintenir les proportions de l'image */
-  margin-right: 10px; /* Ajoutez une marge à droite de l'image */
+  width: 30%;
+  height: auto; 
+  margin-right: 10px;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -107,11 +177,7 @@ img {
     padding: 10px;
   }
 
-/*Ce que j'ai r'ajouté*/
-.menu {
-  width: 70%;
-  padding: 20px;
-}
+
 
 .category {
   margin-bottom: 20px;
@@ -145,6 +211,14 @@ img {
   font-weight: bold;
 }
 
+.actu p{
+  padding: 0 20px;
+  font-family: oswald-medium,oswald,sans-serif;
+  font-size: 20px;
+}
+.actu {
+  padding-bottom: 30px;
+}
 /* reservation */
 .container {
   width: 50%;
@@ -160,19 +234,7 @@ label {
   margin-bottom: 8px;
 }
 
-/* input, select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #c98b54;
-  border-radius: 4px;
-  box-sizing: border-box;
-  position: initial;
-  margin-bottom: 50px; Pour donner de l'espace au texte en dessous
-
-} */
-
-button {
+.submit {
   background-color: bisque;
   color: #000000;
   padding: 10px 15px;
@@ -189,7 +251,8 @@ button:hover {
 .mes {
 text-align: center;
 font-size: x-small;
-padding: 0 40px; 
+padding: 0 40px;
+font-size: 20px;
 }
 
 h2 {
@@ -204,7 +267,6 @@ h2 {
   height: 15px;
 }
 
-/* image des plats */
 .image-plat {
   display: inline-block;
   margin: 0 10px;
@@ -212,11 +274,12 @@ h2 {
 
 .etiquette {
   display: list-item;
+  position: relative;
+  left: 30px;
 }
 .etiquette::marker {
   margin-left: 15px;
 }
-/* ........................... */
 
 *{
   padding: 0;
@@ -229,51 +292,174 @@ h2 {
     max-width: 1650px;
     margin: 0 auto;
     overflow: hidden;
-    white-space: nowrap; /* Empêche le débordement sur une nouvelle ligne */
-}
-
+    white-space: nowrap; 
+    position: relative;
+    padding-bottom: 30px;
+  }
 .carousel_items {
-    display: flex; /* Utilisez display: inline-block pour empêcher le saut à la ligne */
+    display: flex; 
     animation: carousel 5s infinite linear;
+    
 }
 
 .carousel_img {
     display: block;
-    width: 640px;
-    height: auto; /* Assurez-vous que la hauteur est ajustée automatiquement en fonction de la largeur */
+    width: 1040px;
+    height: 600px; 
     object-fit: cover;
 }
 
 @keyframes carousel {
   0% {
-      transform: translate(0); /* Début de la rotation */
+      transform: translate(0); 
   }
   100% {
-      transform: translate(-70%); /* Fin de la rotation, revient à 0deg */
+      transform: translate(-100%); 
   }
 }
  input, select {
   width: 150px;
  }
+ 
+ /* GOOGLE */
+ #google_translate_element {
+   position: fixed;
+   bottom: 10px; 
+   right: 10px; 
+  }
 
- /* FOOTER */
-
- footer {
-  background-color: #c98b54;
-  padding: 50px;
-  bottom: 0;
-  width: 100%;
- }
- .footcontain {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
 }
 
-/* GOOGLE */
-#google_translate_element {
-  position: fixed;
-  bottom: 10px; 
-  right: 10px; 
-  z-index: 1000; 
+.footcontain {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footcontain > div {
+  flex: 1;
+  margin-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footcontain a {
+  color: white;
+  text-decoration: none;
+}
+
+.footcontain button {
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+ button:hover {
+  border: solid bisque;
+  color: bisque;
+}
+
+.mention_container p {
+  text-align: center;
+}
+.mention_container h2 {
+  padding-bottom: 20px;
+}
+.mention_page {
+  background-color: #000; /* Remplacez par la couleur de fond souhaitée (par exemple, noir ici) */
+  color: #fff; /* Couleur du texte en blanc */
+  padding: 20px; /* Ajoutez un espacement intérieur si nécessaire */
+  display: flex;
+}
+.mention_page div {
+  position: relative;
+  left: 200px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+}
+.hm {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+
+.pay{
+  display: flex;
+}
+.photocours {
+  width: 100%; 
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.photocours img {
+  width: 100%;
+  height: auto;
+}
+
+.contact {
+  max-width: 1000px; 
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.carte {
+  float: right;
+  margin-left: 100px; 
+  width: 500px; 
+  height: 400px;
+}
+
+.contact p {
+  margin-bottom: 10px;
+}
+.contact a {
+  color: #ff6600; 
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact a:hover {
+  text-decoration: underline; 
+}
+
+.contact p:last-child {
+  margin-bottom: 0; 
+}
+
+.photocours {
+  position: relative;
+  text-align: center;
+}
+
+.photocours img {
+  width: 100%;
+  height: auto;
+}
+
+.photocours h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white; /* Changez la couleur du texte selon votre préférence */
+}
+
+/* Style pour la boîte de cours */
+.coursbox {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
 }

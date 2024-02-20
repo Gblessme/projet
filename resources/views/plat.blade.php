@@ -19,7 +19,7 @@
     <div class="cart">
         <h2>Panier</h2>
         <ul class="cart-items">
-            <!-- Les éléments du panier seront ajoutés ici dynamiquement -->
+           
         </ul>
         <p class="total">Total : 0.00 €</p>
         <button class="placeOrderBtn">Je commande</button>

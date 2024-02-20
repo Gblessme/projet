@@ -15,27 +15,31 @@
 </head>
 <body>
     <header>
-        <h1>OCNAMO</h1>
         <div class="logo">
-            <img src="/Image/logo.jpg" alt="image">
+            <a href="{{ route ('main.home') }}"><img src="/Image/logo.jpg" alt="image"></a>
+            
             
         </div>
     
         <nav class="navbar">
 
             <ul class="ul_navbar">
-                <li>
-                    <a href="{{ route ('main.home') }}">Acceuil</a>
+                <li class="li_navbar">
+                    <a class="a_navbar" href="{{ route ('main.home') }}">Acceuil</a>
                 </li>
-                <li>
-                    <a href="{{ route ('main.menu') }}">Menu</a>
+                <li class="li_navbar">
+                    <a class="a_navbar" href="{{ route ('main.menu') }}">Menu</a>
                 </li>
-                <li>
-                    <a href="{{ route ('main.cours') }}">Cours</a>
+                <li class="li_navbar">
+                    <a class="a_navbar" href="{{ route ('main.cours') }}">Cours</a>
                 </li>
-                <li>
-                    <a href="{{ route ('main.reservation') }}">Réservation</a>
+                <li class="li_navbar">
+                    <a class="a_navbar" href="{{ route ('main.reservation') }}">Réservation</a>
                 </li>
+                <li class="li_navbar">
+                    <a class="a_navbar" href="{{ route ('main.contact') }}">Contact</a>
+                </li>
+
             </ul>
         </nav>
 </header>
@@ -48,13 +52,25 @@
             <br>
             <p><a href="https://maps.app.goo.gl/Dbrn5azEyVHb2d457">5 Bd Louis XIV</a></p>
             <p><a href="https://maps.app.goo.gl/Dbrn5azEyVHb2d457">59800 Lille</a></p>
+            
+        </div>
+        <div >
+            <p>PARLEZ DE NOUS!</p><br>
+            <p>&copy; OCnamo</p> 
+        </div>  
+            <div class="pay">
+                <a class="reseau" href="https://www.facebook.com/FormationsCnamLille/?locale=fr_FR"><img src="Image/footer.png" alt="" ></a>
+                <a href="https://www.instagram.com/cnam_hautsdefrance/"><img src="Image/foter.png" alt=""></a>
+                <a href="https://twitter.com/CnamNordPdC"><img src="Image/foot.png" alt=""></a>
+            </div>
+        <div>
+            <p>
+                <button><a href="{{ route ('main.reservation') }}">Réservation une table</a></button><br>
+                <button><a href="{{ route ('main.cours') }}">Cours</a></button>
+            </p>
         </div>
         <div>
-            <button><a href="{{ route ('main.reservation') }}">Réservation une table</a></button>
-            <button><a href="{{ route ('main.cours') }}">Cours</a></button>
-        </div>
-        <div>
-            <p><a href="http://">Protection de données</a></p>
+            <p><a href="http://">Protection de données</a></p><br>
             <p><a href="{{ route ('main.mention') }}">Mentions légales</a></p>
         </div>
     </div>
